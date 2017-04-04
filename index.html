@@ -2,47 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
-  <title></title>
+  <title>Calculator</title>
 </head>
 <body>
   <div class="container">
     <div class="calculator">
       <div class="row">
+        <p>Calculator</p>
+      </div>
+      <div class="row" id="output-panel">
         <p>this is the output section</p>
       </div>
       <div class="row"> <!-- First line -->
-        <button class="btn">C</button>
-        <button class="btn">CE</button>
-        <button class="btn">/</button>
+        <button class="btn btn2">C</button>
+        <button class="btn btn2">/</button>
       </div>
-        <div class="row"> <!-- Second line -->
-          <button class="btn">7</button>
-          <button class="btn">8</button>
-          <button class="btn">9</button>
-          <button class="btn">*</button>
-        </div>
-        <div class="row"> <!-- Third line -->
-          <button class="btn">4</button>
-          <button class="btn">5</button>
-          <button class="btn">6</button>
-          <button class="btn">-</button>
-        </div>
-        <div class="row"> <!-- Fourth line -->
-          <button class="btn">1</button>
-          <button class="btn">2</button>
-          <button class="btn">3</button>
-          <button class="btn">+</button>
-        </div>
-        <div class="row"> <!-- Bottom line -->
-          <button class="btn">0</button>
-          <button class="btn">,</button>
-          <button class="btn">=</button>
-        </div>
+      <div class="row"> <!-- Second line -->
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn">*</button>
       </div>
-    </div> <!-- container-->
-    <!-- Scripts -->
-    <script src="jquery/jquery.min.js"></script>
-    <script src="main.js"></script>
-  </body>
-  </html>
+      <div class="row"> <!-- Third line -->
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">-</button>
+      </div>
+      <div class="row"> <!-- Fourth line -->
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">+</button>
+      </div>
+      <div class="row"> <!-- Bottom line -->
+        <button class="btn">0</button>
+        <button class="btn">,</button>
+        <button class="btn btn2">=</button>
+      </div>
+    </div>
+  </div> <!-- container-->
+  <!-- Scripts -->
+  <script src="jquery/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -53,18 +53,18 @@ var getResult = function (term) {
   var result = 0;
   if (term.indexOf('+') > 0) {
     splitArr = term.split('+');
-    return parseInt(splitArr[0]) + parseInt(splitArr[1]);
+    return parseFloat(splitArr[0]) + parseFloat(splitArr[1]);
   } else
   if (term.indexOf('-') > 0) {
     splitArr = term.split('-');
-    return parseInt(splitArr[0]) - parseInt(splitArr[1]);
+    return parseFloat(splitArr[0]) - parseFloat(splitArr[1]);
   }
   if (term.indexOf('*') > 0) {
     splitArr = term.split('*');
-    return parseInt(splitArr[0]) * parseInt(splitArr[1]);
+    return parseFloat(splitArr[0]) * parseFloat(splitArr[1]);
   }
   if (term.indexOf('/') > 0) {
     splitArr = term.split('/');
-    return parseInt(splitArr[0]) / parseInt(splitArr[1]);
+    return parseFloat(splitArr[0]) / parseFloat(splitArr[1]);
   }
 }

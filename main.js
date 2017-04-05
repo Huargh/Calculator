@@ -27,6 +27,7 @@ $('button').click(function() {
     case '-':
     case '*':
     case '/':
+      console.log("Der OperationString ist: " + operationString);
       if (containsOperator(operationString)) {
         operationString = getResult(operationString);
       }
@@ -42,8 +43,9 @@ $('button').click(function() {
 });
 
 var containsOperator = function (inputString) {
-  if (inputString.indexOf('+') > 0 || inputString.indexOf('-') > 0 ||
-      inputString.indexOf('*') > 0 || inputString.indexOf('/') > 0) {
+  var localString = inputString.toString();
+  if (localString.indexOf('+') > 0 || localString.indexOf('-') > 0 ||
+      localString.indexOf('*') > 0 || localString.indexOf('/') > 0) {
     return true;
   }
 }
